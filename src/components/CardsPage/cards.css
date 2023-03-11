@@ -1,0 +1,83 @@
+.cards-page-main{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M960.1768996624262 496.79930877029824L815.5561723039159 413.11862282600856 813.0070889986848 559.1555075763139z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M30.841%2c261.897C45.623%2c261.567%2c60.143%2c255.767%2c67.687%2c243.05C75.375%2c230.091%2c74.292%2c214.085%2c67.038%2c200.878C59.48%2c187.117%2c46.533%2c175.467%2c30.841%2c175.961C15.747%2c176.436%2c5.949%2c189.968%2c-1.614%2c203.039C-9.194%2c216.139%2c-16.272%2c231.504%2c-8.964%2c244.758C-1.488%2c258.316%2c15.362%2c262.242%2c30.841%2c261.897' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M982.502670293051 242.35922229450762L988.6835539532092 330.74997668999407 1077.0743083486955 324.5690930298359 1070.8934246885374 236.17833863434947z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M153.894%2c264.333C189.613%2c262.408%2c214.226%2c232.626%2c231.845%2c201.495C249.121%2c170.971%2c262.225%2c134.444%2c244.554%2c104.147C226.976%2c74.009%2c188.746%2c66.21%2c153.894%2c67.844C122.203%2c69.33%2c94.288%2c85.505%2c76.854%2c112.011C57.182%2c141.919%2c43.731%2c178.819%2c59.888%2c210.764C77.334%2c245.258%2c115.295%2c266.414%2c153.894%2c264.333' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M915.7040937007993 392.8033306163647L803.7242198913052 433.56067151990607 844.4815607948465 545.5405453294002 956.4614346043406 504.7832044258588z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M815.7868275782431 246.31017449834454L803.9185236692056 185.2530439603492 718.2669798167314 233.58406509290322z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.cardsPage-header{
+    color: whitesmoke;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    letter-spacing: 10px;
+    font-size: 350%;
+    font-family: "Britannic Bold", serif;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
+    justify-content: center;
+}
+
+.card{
+    flex-basis: calc(20% - 70px);
+    margin: 10px 30px;
+    transition:transform 0.5s;
+    transform: scale(0.9);
+}
+
+.card:hover{
+    transform: scale(1);
+}
+
+.card-img-top{
+    height: 40%;
+}
+
+.card1{
+    background-color: darkgrey;
+}
+
+@media (max-width:1024px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: max-content;
+        justify-content: center;
+        font-size: 90%;
+    }
+
+    .card {
+        flex-basis: calc(25% - 0px);
+        margin: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: max-content;
+        justify-content: center;
+        font-size: 70%;
+    }
+
+    .card {
+        flex-basis: calc(35% - 0px);
+        margin: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: max-content;
+        justify-content: center;
+    }
+
+    .card {
+        flex-basis: calc(35% - 0px);
+        margin: 10px;
+    }
+}
+
