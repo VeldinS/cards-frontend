@@ -1,4 +1,5 @@
 import React from 'react';
+import { component$, useSignal, useVisibleTask$} from "@builder.io/qwik";
 
 //importing styles
 import './cards.css'
